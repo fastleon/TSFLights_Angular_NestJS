@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/mountains.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .logo_box {
+        background-image: url("https://tsflights-images.firebaseapp.com/TsFlightsHorizLogo.jpg");
+        height: 80px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px 20 px;
+        align-self: flex-start;
+        @media screen and (max-width: 497px) { //usado solo para pantallas pequeñas donde se cambian los sig parametros)
+            width: 200px;
+            margin-left: 4px;
+            margin-top: 7px;
+        }
+    }
+    .link_box {
+        height: 80px;
+        margin: 10px;
+        align-self: flex-end;
+        border: 1px dotted grey;
+    }
+}
